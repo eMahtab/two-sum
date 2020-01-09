@@ -40,7 +40,7 @@ Above implementation have runtime complexity of O(n^2) and space complexity of O
 Runtime Complexity = O(n^2)
 Space Complexity   = O(1)
 ```
-
+### Can we do better : ❔
 
 ```java
 public int[] twoSum(int[] nums, int target) {
@@ -61,4 +61,10 @@ public int[] twoSum(int[] nums, int target) {
         
         return result;
  }
+```
+Above implementation have runtime complexity of O(n) and space complexity of O(n)
+
+```
+Runtime Complexity = O(n)
+Space Complexity   = O(n)
 ```

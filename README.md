@@ -40,3 +40,25 @@ Above implementation have runtime complexity of O(n^2) and space complexity of O
 Runtime Complexity = O(n^2)
 Space Complexity   = O(1)
 ```
+
+
+```java
+public int[] twoSum(int[] nums, int target) {
+        int[] result = {-1, -1};
+        if(nums == null || nums.length < 2)
+        	return result;
+        
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(nums[0], 0);
+        for(int i = 1; i < nums.length; i++) {
+        	if(map.containsKey(target - nums[i])) {
+        			result[0] = map.get(target - nums[i]);
+        			result[1] = i;
+        	} else {
+        	  map.put(nums[i], i);
+        	}
+        }
+        
+        return result;
+ }
+```
